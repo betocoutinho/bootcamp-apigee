@@ -1,0 +1,24 @@
+{
+   "livros":{
+       "livros":[
+           {
+               "titulo": "roberto",
+               "auto": "roberrto",
+               "genero": "roberto",
+               "preco": 90.5
+           },
+           {
+            "titulo": "roberto",
+            "auto": "roberrto",
+            "genero": "roberto",
+            "preco": 90.5
+        },
+        {
+            "titulo": "roberto",
+            "auto": "roberrto",
+            "genero": "roberto",
+            "preco": 90.5
+        }
+       ]
+   }
+}

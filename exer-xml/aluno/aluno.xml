@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aluno>
+	<nome>Roberto</nome>
+	<nota>10</nota>
+	<endereco>
+		<rua>Sei lá</rua>
+		<numero>79</numero>
+		<bairro>Ouro Verde</bairro>
+		<cidade>Olinda</cidade>
+		<estado>PE</estado>
+	</endereco>
+</aluno>

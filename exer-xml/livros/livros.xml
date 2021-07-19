@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="livros.xsd">
+  <livro>
+    <titulo>JAVA 6.0</titulo>
+    <autor>Ricardo Assunção</autor>
+    <genero>Técnico</genero>
+    <preco>75.50</preco>
+  </livro>
+  <livro>
+    <titulo>VB.NET</titulo>
+    <autor>José Silveira</autor>
+    <genero>Técnico</genero>
+    <preco>68.25</preco>
+  </livro>
+  <livro>
+    <titulo>A Carocinha</titulo>
+    <autor>Maria de Paula</autor>
+    <genero>Infantil</genero>
+    <preco>15.00</preco>
+  </livro>
+  <livro>
+    <titulo>A Lua e o Sol</titulo>
+    <autor>Manoela Ribeiro</autor>
+    <genero>Romance</genero>
+    <preco>38.70</preco>
+  </livro>
+  <livro>
+    <titulo>O Futuro da Terra</titulo>
+    <autor>Gigi de Lourdes</autor>
+    <genero>Romance</genero>
+    <preco>48.99</preco>
+  </livro>
+</livros>

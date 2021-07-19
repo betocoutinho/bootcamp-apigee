@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contrato id="0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Contrato.xsd">
+	<numero_contrato>numero_contrato</numero_contrato>
+	<data_inicio>2001-01-01</data_inicio>
+	<data_final>2001-01-01</data_final>
+	<valor_do_contrato>0.0</valor_do_contrato>
+	<empresa_locadora codigo_empresa_locadora="0">
+		<nome>nome</nome>
+		<telefone>telefone</telefone>
+		<endereco>endereco</endereco>
+	</empresa_locadora>
+	<obra codigo_obra="0">
+		<nome>nome</nome>
+		<endereco>endereco</endereco>
+		<fiscal codigo_fiscal="0">
+			<nome>nome</nome>
+			<telefone>telefone</telefone>
+			<endereco>endereco</endereco>
+		</fiscal>
+	</obra>
+	<lista_itens>
+		<item>
+			<nome_item>nome_item</nome_item>
+			<quantidade>0</quantidade>
+		</item>
+		<item>
+			<nome_item>nome_item</nome_item>
+			<quantidade>0</quantidade>
+		</item>
+	</lista_itens>
+</contrato>

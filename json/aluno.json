@@ -1,0 +1,17 @@
+{
+    "aluno":{
+        "nome": "Roberto",
+        "nota": 10,
+        "endereco": {
+            "rua": "sei la",
+            "numero": "28",
+            "bairro": "ouro verde",
+            "cidade": "olinda",
+            "estado": "pernambuco"
+        },
+        "contato":{
+            "telefone": "94564231321"
+        }
+
+    }
+}

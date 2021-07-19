@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- Estrutura do documento -->
+	<xs:element name="contrato">
+		<xs:complexType>
+			
+			<xs:sequence>
+				<xs:element name="numero_contrato" type="xs:string"></xs:element>
+				
+				<xs:element name="data_inicio" type="xs:date"></xs:element>
+				
+				<xs:element name="data_final" type="xs:date"></xs:element>
+				
+				<xs:element name="valor_do_contrato" type="xs:decimal"></xs:element>
+				
+				<xs:element name="empresa_locadora" type="empresa_locadora"></xs:element>
+				
+				<xs:element name="obra" type="obra"></xs:element>
+				
+				<xs:element name="lista_itens">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="item" type="iten" maxOccurs="unbounded"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:sequence>
+			
+			<xs:attribute name="id" type="xs:long" use="required"></xs:attribute>
+			
+		</xs:complexType>
+	</xs:element>
+
+
+<!-- tipos complexos -->
+
+	<xs:complexType name="empresa_locadora">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"></xs:element>
+			
+			<xs:element name="telefone" type="xs:string"></xs:element>
+			
+			<xs:element name="endereco" type="xs:string"></xs:element>
+			
+		</xs:sequence>
+		<xs:attribute name="codigo_empresa_locadora" type="xs:long"></xs:attribute>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="fiscal">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"></xs:element>
+			
+			<xs:element name="telefone" type="xs:string"></xs:element>
+			
+			<xs:element name="endereco" type="xs:string"></xs:element>
+			
+		</xs:sequence>
+		<xs:attribute name="codigo_fiscal" type="xs:long"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:complexType name="obra">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"></xs:element>
+			
+			
+			<xs:element name="endereco" type="xs:string"></xs:element>
+			
+			<xs:element name="fiscal" type="fiscal"></xs:element>
+			
+		</xs:sequence>
+		<xs:attribute name="codigo_obra" type="xs:long"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:complexType name="iten">
+		<xs:sequence>
+			<xs:element name="nome_item" type="xs:string"></xs:element>
+			<xs:element name="quantidade" type="xs:integer"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+</xs:schema>
