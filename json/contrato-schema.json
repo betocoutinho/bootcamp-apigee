@@ -1,0 +1,91 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Contrato",
+    "description": "A product in the catalog",
+    "type": "object",
+    "properties": {
+        "codContrato":{
+            "description":"Codigo do contrato no sistema",
+            "type": "integer",
+            "minimun": 0
+        },
+        "numeroContrato":{
+            "description": "numero presente no contrato",
+            "type": "string"
+        },
+        "dataInicial":{
+            "description": "data inicial do contrato",
+            "type": "string"
+        },
+        "dataFinal":{
+            "description": "data final do contrato",
+            "type": "string"
+        },
+        "valorContrato":{
+            "description": "valor do contrato",
+            "type": "number"
+        },
+        "empresaLocadora":{
+            "description": "empresa que fornece os itens",
+            "type": "object",
+            "properties":{
+                "nomeDaEmpresa":{
+                    "type": "string"
+                },
+                "endereco":{
+                    "type": "string"
+                },
+                "telefone":{
+                    "type": "array",
+                    "items":{
+                        "type": "string"
+                        
+                    }
+                }
+            }
+        },
+        "obra":{
+            "type": "object",
+            "properties":{
+                "nomeDoEmpreendimento":{
+                    "type": "string"
+                },
+                "endereco":{
+                    "type": "string"
+                },
+                "fiscal":{
+                    "type": "object",
+                    "properties":{
+                        "nome":{
+                            "type": "string"
+                        },
+                        "telefone":{
+                            "type": "string"
+                        },
+                        "salario":{
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "listaDeItens":{
+            "type": "array",
+            "items":{
+                "type": "object",
+                "properties":{
+                    "nomeDoItem":{
+                        "type": "string"
+                    },
+                    "quantidade":{
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+}

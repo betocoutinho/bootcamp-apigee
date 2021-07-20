@@ -1,0 +1,26 @@
+{
+    "codContrato": 20,
+    "numeroContrato": "ABCDEFGHIJKLMNOPQRSTU",
+    "dataInicial": "ABCDEFGHIJKL",
+    "dataFinal": "ABCDEFG",
+    "valorContrato": 879.5,
+    "empresaLocadora": {
+      "nomeDaEmpresa": "ABCDEFGHIJKLM",
+      "endereco": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+      "telefone": []
+    },
+    "obra": {
+      "nomeDoEmpreendimento": "ABCDE",
+      "endereco": "ABCDEFGHIJKLMNOPQ",
+      "fiscal": {
+        "nome": "ABCDEFGH",
+        "telefone": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+        "salario": 306.25
+      }
+    },
+    "listaDeItens": [
+        {"nomeDoItem": "sadasdasdas", "quantidade": 78},
+        {"nomeDoItem": "sadasdasdas", "quantidade": 78},
+        {"nomeDoItem": "sadasdasdas", "quantidade": 78}
+    ]
+  }
