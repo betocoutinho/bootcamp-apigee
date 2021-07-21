@@ -9,9 +9,10 @@
             "cidade": "olinda",
             "estado": "pernambuco"
         },
-        "contato":{
-            "telefone": "94564231321"
-        }
+        "contato":[
+            {"telefone": "94564231321"},
+            {"email": "roberto@gmail.com"}
+        ]
 
     }
 }
