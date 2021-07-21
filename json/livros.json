@@ -1,24 +1,34 @@
 {
-   "livros":{
-       "livros":[
-           {
-               "titulo": "roberto",
-               "auto": "roberrto",
-               "genero": "roberto",
-               "preco": 90.5
-           },
-           {
-            "titulo": "roberto",
-            "auto": "roberrto",
-            "genero": "roberto",
-            "preco": 90.5
-        },
+	"livros":[
+		{
+			"titulo":"Java 6.0",
+			"autor":"Ricardo Assunção",
+			"genero":"Técnico",
+			"preco":75.50
+		},
         {
-            "titulo": "roberto",
-            "auto": "roberrto",
-            "genero": "roberto",
-            "preco": 90.5
-        }
-       ]
-   }
+			"titulo":"VB.net",
+			"autor":"José Silveira",
+			"genero":"Tecnico",
+			"preco":68.25
+		},
+        {
+			"titulo":"A carochinha",
+			"autor":"Maria de Paula",
+			"genero":"Infantil",
+			"preco":15.00
+		},
+        {
+			"titulo":"A lua e o sol",
+			"autor":"Manoela Ribeiro",
+			"genero":"Romance",
+			"preco":38.70
+		},
+        {
+			"titulo":"O Futuro da Terra",
+			"autor":"Gigi de Lourdes",
+			"genero":"Ficção",
+			"preco":48.99
+		}
+	]
 }

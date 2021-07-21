@@ -1,27 +1,30 @@
 {
-    "$schema": "https://json-schema.org/draft/2019-09/schema",
-    "$id": "https://example.com/livros.json",
-    "title": "livros",
-    "type":"object",
-    "properties": {
-        "livros":{
-            "type": "object",
-            "properties":{
-                "livro":{
-                    "type": "array",
-                    "items":{
-                        "type":"object",
-                        "properties": {
-                            "titulo": { "type": "string" },
-                            "autor": { "type": "string" },
-                            "genero": { "type": "string" },
-                            "preco": { "type": "number" }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1626903826.json", 
+	"title": "Root", 
+	"type": "object",
+	"properties": {
+		"livros": {
+			"type": "array",
+			"items":{ 
+				"type": "object",
+				"properties": {
+					"titulo": {
+						"type": "string"
+					},
+					"autor": { 
+						"type": "string"
+					},
+					"genero": {
+						"type": "string"
+					},
+					"preco": {
+						"type": "number"
+					}
+				}
+			}
+
+		}
+	}
 }
