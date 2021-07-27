@@ -1,0 +1,120 @@
+---
+openapi: 3.0.0
+info:
+  title: Avaliador de filmes
+  description: sistema para avaliar os filmes.
+  version: v1
+servers:
+- url: https://virtserver.swaggerhub.com/anthedeguemon/netflix/v1
+  description: SwaggerHub API Auto Mocking
+paths:
+  /usuarios:
+    description: Esse endpoint devera ser usado sempre em que for necessariofazer requisição onde não ha paramentro no path.
+    post:
+      tags:
+      - Usuários
+      description: Essa operação insere um **novo usuario** no banco de dados.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Usuario'
+      responses:
+        "201":
+          description: Usuario cadastrado com sucesso!
+        "403":
+          description: Não foi possivel incluir o usuario. Verifique o seus dados.
+        "5XX":
+          description: Erro no servidor! Tente novamente mais tarde.
+  /usuarios/{id}:
+    get:
+      tags:
+      - Usuários
+      description: Essa operação retorna um usuario com base na sua ID.
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Usuario encontrado!
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Usuario'
+        "404":
+          description: Usuario não encontrado!
+    put:
+      tags:
+      - Usuários
+      description: Essa operação altera um usuario com base na sua ID.
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      requestBody:
+        description: novos dados do usuario.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Usuario'
+      responses:
+        "200":
+          description: Usuario encontrado!
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Usuario'
+        "404":
+          description: Usuario não encontrado!
+    delete:
+      tags:
+      - Usuários
+      description: Essa operação deleta um usuario com base na sua ID.
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "204":
+          description: Usuario encontrado!
+        "404":
+          description: Usuario não encontrado!
+components:
+  schemas:
+    Usuario:
+      type: object
+      properties:
+        idUsuario:
+          type: integer
+          format: int64
+        nome:
+          type: string
+        avatar:
+          type: string
+          format: binary
+    Opiniao:
+      type: object
+      properties:
+        idUsuario:
+          type: integer
+          format: int64
+        idFilme:
+          type: integer
+          format: int64
+        opiniaoUsuario:
+          type: string
+        notaUsuario:
+          type: integer
